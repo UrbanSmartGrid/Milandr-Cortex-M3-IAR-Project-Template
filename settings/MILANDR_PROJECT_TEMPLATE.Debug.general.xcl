@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\bin\armjlink2.dll" 
+
+"D:\PROJECTS\PLC\MILANDR\PROJECT_TEMPLATE\Debug\Exe\MILANDR_PROJECT_TEMPLATE.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\bin\armbat.dll" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\config\flashloader\Milandr\MDR1986VE9x\FlashMDR1986VE9x.board" 
+
+
+
+
