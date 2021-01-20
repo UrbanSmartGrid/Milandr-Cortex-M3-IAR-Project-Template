@@ -22,7 +22,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>1405296276</Checksum>
+        <Checksum>1733471100</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -68,6 +68,18 @@
         <FreqHi>0</FreqHi>
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -122,18 +134,6 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
-    <DriverProfiling>
-        <Enabled>0</Enabled>
-        <Mode>1</Mode>
-        <Graph>0</Graph>
-        <Symbiont>0</Symbiont>
-    </DriverProfiling>
-    <CallStackLog>
-        <Enabled>0</Enabled>
-    </CallStackLog>
-    <CallStackStripe>
-        <ShowTiming>1</ShowTiming>
-    </CallStackStripe>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>

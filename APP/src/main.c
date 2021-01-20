@@ -2,6 +2,10 @@
 
 
 /***********************************************************************************/
+
+SYSTEM_EVENTS system_events = {false, false, false, false};
+
+/***********************************************************************************/
 #define	HSE_FREQ	12	// MHz
 #define	PLL_MUL		5	// HCLK = 72 MHz
 //#define	HSE_FREQ	8	// MHz
@@ -9,34 +13,95 @@
 #define	_PLL_
 void StartupClockConfigure(void)
 {
-	// ñìåùåíèå òàáëèöû âåêòîðîâ ïðåðûâàíèé
+	// ÑÐ¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð²ÐµÐºÑ‚Ð¾Ñ€Ð¾Ð² Ð¿Ñ€ÐµÑ€Ñ‹Ð²Ð°Ð½Ð¸Ð¹
 	// SCB - System Control Block
 	// VTOR - Vector Table Offset Register
-	SCB->VTOR = 0x08000000;	// òàáëèöà ðàñïîëàãàåòñÿ â íà÷àëå Flash-ïàìÿòè
+	SCB->VTOR = 0x08000000;	// Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ð° Ñ€Ð°ÑÐ¿Ð¾Ð»Ð°Ð³Ð°ÐµÑ‚ÑÑ Ð² Ð½Ð°Ñ‡Ð°Ð»Ðµ Flash-Ð¿Ð°Ð¼ÑÑ‚Ð¸
 	
-	// Ïîñëå RESET òàêòèðîâàíèå îñóùåñòâëÿåòñÿ îò HSI = 8 ÌÃö
+	// ÐŸÐ¾ÑÐ»Ðµ RESET Ñ‚Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¾ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð»ÑÐµÑ‚ÑÑ Ð¾Ñ‚ HSI = 8 ÐœÐ“Ñ†
 	
-	// Çàïóñêàåì ãåíåðàòîð HSE
-	MDR_RST_CLK->HS_CONTROL = 0x0001;	// ðåæèì îñöèëëÿòîðà
+	// Ð—Ð°Ð¿ÑƒÑÐºÐ°ÐµÐ¼ Ð³ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ HSE
+	MDR_RST_CLK->HS_CONTROL = 0x0001;	// Ñ€ÐµÐ¶Ð¸Ð¼ Ð¾ÑÑ†Ð¸Ð»Ð»ÑÑ‚Ð¾Ñ€Ð°
 	
 	while((MDR_RST_CLK->CLOCK_STATUS & RST_CLK_CLOCK_STATUS_HSE_RDY) != RST_CLK_CLOCK_STATUS_HSE_RDY);
 	
-	// Ïåðåêëþ÷àåì èñòî÷íèê òàêòèðîâàíèÿ CPU_C1 ñ HSI íà HSE
+	// ÐŸÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº Ñ‚Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ CPU_C1 Ñ HSI Ð½Ð° HSE
 	// CPU_C1 = HSE_FREQ : CPU_C2 = CPU_C1 : CPU_C3 = CPU_C2 : HCLK = CPU_C3 = HSE_FREQ
 	MDR_RST_CLK->CPU_CLOCK = 0x0102;
 	
-	// âûêëþ÷àåì ãåíåðàòîðû HSI è LSI
+	// Ð²Ñ‹ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð³ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ‹ HSI Ð¸ LSI
 	MDR_BKP->REG_0F = 0x0000;
 	
 #ifdef	_PLL_
-	// êîýôôèöèåíò óìíîæåíèÿ âõîäíîãî òàêòîâîãî ñèãíàëà
+	// ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð²Ñ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ‚Ð°ÐºÑ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ¸Ð³Ð½Ð°Ð»Ð°
 	MDR_RST_CLK->PLL_CONTROL = (PLL_MUL << RST_CLK_PLL_CONTROL_PLL_CPU_MUL_Pos);
-	// çàïóñêàåì PLL
+	// Ð·Ð°Ð¿ÑƒÑÐºÐ°ÐµÐ¼ PLL
 	MDR_RST_CLK->PLL_CONTROL |= RST_CLK_PLL_CONTROL_PLL_CPU_ON;
 	while((MDR_RST_CLK->CLOCK_STATUS & RST_CLK_CLOCK_STATUS_PLL_CPU_RDY) != RST_CLK_CLOCK_STATUS_PLL_CPU_RDY);
-	// ïîäêëþ÷àåì PLL ê òàêòèðîâàíèþ: CPU_C2 = PLL_CPU
+	// Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ PLL Ðº Ñ‚Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÑŽ: CPU_C2 = PLL_CPU
 	MDR_RST_CLK->CPU_CLOCK |= RST_CLK_CPU_CLOCK_CPU_C2_SEL;
 #endif	// _PLL_
+}
+
+
+/***********************************************************************************/
+#if HSE_FREQ == 12
+	#define	RELOAD_VALUE	72000
+#else
+	#define	RELOAD_VALUE	80000
+#endif
+
+void StartSysTick(void)
+{
+	SysTick->LOAD = RELOAD_VALUE;
+	
+	// Clk Source = HCLK & SysTick Interrupt Enable
+	SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk;
+	
+	// Start Systick
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
+}
+
+
+/***********************************************************************************/
+// ÐŸÑ€ÐµÑ€Ñ‹Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ‚ ÑÐ¸ÑÑ‚ÐµÐ¼Ð½Ð¾Ð³Ð¾ Ñ‚Ð°Ð¹Ð¼ÐµÑ€Ð° SysTick ÐºÐ°Ð¶Ð´ÑƒÑŽ 1 Ð¼Ñ
+void SysTick_Handler(void)
+{
+	static uint16_t _10ms_		= 0;
+	static uint16_t _100ms_	= 0;
+	static uint16_t _500ms_	= 0;
+	static uint16_t _1000ms_	= 0;
+	
+	
+	_10ms_++;
+	_100ms_++;
+	_500ms_++;
+	_1000ms_++;
+	
+	
+	if(_10ms_ >= 10)
+	{
+		system_events._10ms_event = true;
+		_10ms_ = 0;
+	}
+	
+	if(_100ms_ >= 100)
+	{
+		system_events._100ms_event = true;
+		_100ms_ = 0;
+	}
+	
+	if(_500ms_ >= 500)
+	{
+		system_events._500ms_event = true;
+		_500ms_ = 0;
+	}
+	
+	if(_1000ms_ >= 1000)
+	{
+		system_events._1000ms_event = true;
+		_1000ms_ = 0;
+	}	
 }
 
 
@@ -45,7 +110,62 @@ void StartupClockConfigure(void)
 /***********************************************************************************/
 void main(void)
 {
-	StartupClockConfigure();
+	bool dbg_flag = false;
 	
-	while(1);
+	
+	StartupClockConfigure();
+	StartSysTick();
+	GPIO_Init();
+	
+	
+	while(1)
+	{
+//		if(system_events._10ms_event == TRUE)
+//		{
+//			system_events._10ms_event = FALSE;
+//		}
+		
+		if(system_events._100ms_event == true)
+		{
+			system_events._100ms_event = false;
+			
+			CheckButtons();
+			
+			if(btn_pwr_ctrl.event == true)
+			{
+				if((btn_pwr_ctrl.state == RELEASED) && (btn_pwr_ctrl.pressed_type == PRESS_SHORTTIME_CONFIRMED))
+				{
+					printf("BTN_PWR_CTRL => SHORT TIME PRESSED\n");
+				}
+				
+				if(btn_pwr_ctrl.state == PRESS_LONGTIME_CONFIRMED)
+				{
+					printf("BTN_PWR_CTRL => LONG TIME PRESSED\n");
+				}
+			}	
+		}
+		
+//		if(system_events._500ms_event == TRUE)
+//		{
+//			system_events._500ms_event = FALSE;
+//		}
+		
+		if(system_events._1000ms_event == true)
+		{
+			system_events._1000ms_event = false;
+			
+			if(dbg_flag==false)
+			{
+				dbg_flag = true;
+//				LED_PWR_ORANGE_ON
+				LED_PWR_GREEN_ON
+			}
+			else
+			{
+				dbg_flag = false;
+//				LED_PWR_ORANGE_OFF
+				LED_PWR_GREEN_OFF
+			}
+		}
+	}
 }

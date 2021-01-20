@@ -1,0 +1,19 @@
+MDR32F9Qx_port.pbi: \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\SPL\src\MDR32F9Qx_port.c \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\SPL\inc\MDR32F9Qx_port.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\SPL\MDR32F9Qx_config.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\SPL\inc\MDR32F9Qx_lib.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\DLib_Product.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\CMSIS\MDR32Fx.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\CMSIS/core_cm3.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\CMSIS\core_cmInstr.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c\cmsis_iar.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\arm\inc\c/iccarm_builtin.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\CMSIS\core_cmFunc.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\STARTUP\system_MDR32F9Qx.h \
+  D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\SPL\inc/MDR32F9Qx_lib.h
