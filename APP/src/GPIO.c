@@ -22,6 +22,9 @@ void GPIO_Init(void)
 	MDR_PORTA->PD |= (LSB16<<PIN1) | (LSB16<<PIN2) | (LSB16<<PIN3);
 	// фильтрация импульсов до 10 нс
 	MDR_PORTA->GFEN |= (1U<<PIN1) | (1U<<PIN2) | (1U<<PIN3);
+	
+	//MDR_PORTA->PWR
+	
 	// режим цифрового порта
 	MDR_PORTA->ANALOG |= (1U<<PIN1) | (1U<<PIN2) | (1U<<PIN3);
 	
@@ -33,6 +36,17 @@ void GPIO_Init(void)
 	MDR_PORTA->OE |= (1U<<PIN5) | (1U<<PIN4);
 	// режим цифрового порта
 	MDR_PORTA->ANALOG |= (1U<<PIN5) | (1U<<PIN4);
+	
+	 // BMC_PWR_ON = PE3: digital out '0' - power off '1' - power on
+	MDR_PORTE->RXTX &= ~(1U<<PIN3);
+	// no pull-up & no pull-down
+	MDR_PORTE->PULL &= ~(1U<<PIN3);
+	MDR_PORTE->OE |= (1U<<PIN3);
+	// медленный фронт (100 нс)
+	MDR_PORTE->PWR &= ~(3U << 6);
+	MDR_PORTE->PWR |= (1U << 6);
+	// режим цифрового порта
+	MDR_PORTE->ANALOG |= (1U<<PIN3);
 }
 
 

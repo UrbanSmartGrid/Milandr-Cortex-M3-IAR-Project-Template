@@ -36891,13 +36891,41 @@
     "scope": null
   },
   {
+    "ID": "c:def.h@1581@macro@SYSTEM_POWER_ON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SYSTEM_POWER_ON",
+    "location": {
+      "column": "9",
+      "line": "73",
+      "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
+    },
+    "name": "SYSTEM_POWER_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:def.h@1638@macro@SYSTEM_POWER_OFF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SYSTEM_POWER_OFF",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
+    },
+    "name": "SYSTEM_POWER_OFF",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@btn_pwr_ctrl",
     "What": "Variable",
     "defdec": "Dec",
     "display": "btn_pwr_ctrl",
     "location": {
       "column": "20",
-      "line": "74",
+      "line": "79",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "btn_pwr_ctrl",
@@ -36911,7 +36939,7 @@
     "display": "btn_pwr_ctrl",
     "location": {
       "column": "20",
-      "line": "74",
+      "line": "79",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "btn_pwr_ctrl",
@@ -36925,7 +36953,7 @@
     "display": "btn_rst_ctrl",
     "location": {
       "column": "20",
-      "line": "75",
+      "line": "80",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "btn_rst_ctrl",
@@ -36939,7 +36967,7 @@
     "display": "btn_rst_ctrl",
     "location": {
       "column": "20",
-      "line": "75",
+      "line": "80",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "btn_rst_ctrl",
@@ -36953,7 +36981,7 @@
     "display": "btn_boot_ctrl",
     "location": {
       "column": "20",
-      "line": "76",
+      "line": "81",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "btn_boot_ctrl",
@@ -36967,7 +36995,7 @@
     "display": "btn_boot_ctrl",
     "location": {
       "column": "20",
-      "line": "76",
+      "line": "81",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "btn_boot_ctrl",
@@ -36981,7 +37009,7 @@
     "display": "void GPIO_Init(void)",
     "location": {
       "column": "6",
-      "line": "79",
+      "line": "84",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "GPIO_Init",
@@ -36995,7 +37023,7 @@
     "display": "void GPIO_Init(void)",
     "location": {
       "column": "6",
-      "line": "79",
+      "line": "84",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "GPIO_Init",
@@ -37009,7 +37037,7 @@
     "display": "void CheckButtons(void)",
     "location": {
       "column": "6",
-      "line": "80",
+      "line": "85",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "CheckButtons",
@@ -37023,7 +37051,7 @@
     "display": "void CheckButtons(void)",
     "location": {
       "column": "6",
-      "line": "80",
+      "line": "85",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\inc\\def.h"
     },
     "name": "CheckButtons",
@@ -39097,13 +39125,13 @@
     "scope": null
   },
   {
-    "ID": "c:GPIO.c@1966@macro@LONGTIME_CNT",
+    "ID": "c:GPIO.c@2381@macro@LONGTIME_CNT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LONGTIME_CNT",
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "58",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\GPIO.c"
     },
     "name": "LONGTIME_CNT",
@@ -39117,7 +39145,7 @@
     "display": "bool DefineButtonState(uint16_t, BUTTON_CTRL *)",
     "location": {
       "column": "6",
-      "line": "46",
+      "line": "60",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\GPIO.c"
     },
     "name": "DefineButtonState",
@@ -39131,7 +39159,7 @@
     "display": "void CheckButtons(void)",
     "location": {
       "column": "6",
-      "line": "101",
+      "line": "115",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\GPIO.c"
     },
     "name": "CheckButtons",
@@ -40469,20 +40497,6 @@
     "scope": null
   },
   {
-    "ID": "c:ycheck.h@1402@macro@__AEABI_PORTABILITY_INTERNAL_LEVEL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
-    "location": {
-      "column": "11",
-      "line": "42",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.5\\arm\\inc\\c\\ycheck.h"
-    },
-    "name": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:stdbool.h@96@macro@_STDBOOL",
     "What": "MacroDef",
     "defdec": "Def",
@@ -40553,17 +40567,17 @@
     "scope": null
   },
   {
-    "ID": "c:core_cmFunc.h@2013@macro@__CORE_CMFUNC_H",
+    "ID": "c:ycheck.h@1402@macro@__AEABI_PORTABILITY_INTERNAL_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "__CORE_CMFUNC_H",
+    "display": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
     "location": {
-      "column": "9",
-      "line": "39",
-      "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\CMSIS\\core_cmFunc.h"
+      "column": "11",
+      "line": "42",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.5\\arm\\inc\\c\\ycheck.h"
     },
-    "name": "__CORE_CMFUNC_H",
-    "origin": "user_include",
+    "name": "__AEABI_PORTABILITY_INTERNAL_LEVEL",
+    "origin": "system_include",
     "scope": null
   },
   {
@@ -40578,6 +40592,20 @@
     },
     "name": "_DLIB_CONFIG_H",
     "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:core_cmFunc.h@2013@macro@__CORE_CMFUNC_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__CORE_CMFUNC_H",
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\CMSIS\\core_cmFunc.h"
+    },
+    "name": "__CORE_CMFUNC_H",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -40665,13 +40693,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@269@macro@HSE_FREQ",
+    "ID": "c:main.c@338@macro@HSE_FREQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "HSE_FREQ",
     "location": {
       "column": "9",
-      "line": "9",
+      "line": "11",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\main.c"
     },
     "name": "HSE_FREQ",
@@ -40679,13 +40707,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@297@macro@PLL_MUL",
+    "ID": "c:main.c@365@macro@PLL_MUL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PLL_MUL",
     "location": {
       "column": "9",
-      "line": "10",
+      "line": "12",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\main.c"
     },
     "name": "PLL_MUL",
@@ -40721,13 +40749,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1997@macro@RELOAD_VALUE",
+    "ID": "c:main.c@2033@macro@RELOAD_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RELOAD_VALUE",
     "location": {
       "column": "10",
-      "line": "49",
+      "line": "51",
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\main.c"
     },
     "name": "RELOAD_VALUE",
@@ -40829,20 +40857,6 @@
       "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\main.c"
     },
     "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3337@F@main@dbg_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "dbg_flag",
-    "location": {
-      "column": "7",
-      "line": "113",
-      "path": "D:\\PROJECTS\\PLC\\Milandr-Cortex-M3-IAR-Project-Template\\APP\\src\\main.c"
-    },
-    "name": "dbg_flag",
     "origin": "project_file",
     "scope": null
   },

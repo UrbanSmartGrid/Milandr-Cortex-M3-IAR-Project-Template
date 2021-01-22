@@ -6,10 +6,10 @@
 SYSTEM_EVENTS system_events = {false, false, false, false};
 
 /***********************************************************************************/
-#define	HSE_FREQ	12	// MHz
-#define	PLL_MUL		5	// HCLK = 72 MHz
-//#define	HSE_FREQ	8	// MHz
-//#define	PLL_MUL		9	// HCLK = 80 MHz
+//#define	HSE_FREQ	12	// MHz
+//#define	PLL_MUL		5	// HCLK = 72 MHz
+#define	HSE_FREQ	8	// MHz
+#define	PLL_MUL		9	// HCLK = 80 MHz
 #define	_PLL_
 void StartupClockConfigure(void)
 {
@@ -110,13 +110,13 @@ void SysTick_Handler(void)
 /***********************************************************************************/
 void main(void)
 {
-	bool dbg_flag = false;
+//	bool dbg_flag = false;
 	
 	
 	StartupClockConfigure();
 	StartSysTick();
 	GPIO_Init();
-	
+
 	
 	while(1)
 	{
@@ -150,22 +150,22 @@ void main(void)
 //			system_events._500ms_event = FALSE;
 //		}
 		
-		if(system_events._1000ms_event == true)
-		{
-			system_events._1000ms_event = false;
-			
-			if(dbg_flag==false)
-			{
-				dbg_flag = true;
-//				LED_PWR_ORANGE_ON
-				LED_PWR_GREEN_ON
-			}
-			else
-			{
-				dbg_flag = false;
-//				LED_PWR_ORANGE_OFF
-				LED_PWR_GREEN_OFF
-			}
-		}
+//		if(system_events._1000ms_event == true)
+//		{
+//			system_events._1000ms_event = false;
+//			
+//			if(dbg_flag==false)
+//			{
+//				dbg_flag = true;
+////				LED_PWR_ORANGE_ON
+//				LED_PWR_GREEN_ON
+//			}
+//			else
+//			{
+//				dbg_flag = false;
+////				LED_PWR_ORANGE_OFF
+//				LED_PWR_GREEN_OFF
+//			}
+//		}
 	}
 }

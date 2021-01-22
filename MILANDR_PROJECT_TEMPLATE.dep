@@ -5,135 +5,57 @@
     <configuration>
         <name>Debug</name>
         <outputs>
+            <file>$PROJ_DIR$\Debug\Exe\MILANDR_PROJECT_TEMPLATE.out</file>
+            <file>$PROJ_DIR$\APP\src\GPIO.c</file>
             <file>$PROJ_DIR$\APP\inc\def.h</file>
-            <file>$PROJ_DIR$\CMSIS\core_cm3.h</file>
+            <file>$PROJ_DIR$\APP\src\main.c</file>
             <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\List\MILANDR_PROJECT_TEMPLATE.map</file>
             <file>$PROJ_DIR$\CMSIS\MDR32Fx.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\Milandr\MDR1986VE9x\MDR1986VE9x.icf</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
             <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
             <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
             <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\APP\src\GPIO.c</file>
-            <file>$PROJ_DIR$\APP\src\main.c</file>
-            <file>$PROJ_DIR$\SPL\src\MDR32F9Qx_port.c</file>
-            <file>$PROJ_DIR$\STARTUP\startup_MDR32F9Qx.s</file>
-            <file>$PROJ_DIR$\Debug\Obj\MDR32F9Qx_port.o</file>
             <file>$PROJ_DIR$\Debug\Obj\MDR32F9Qx_port.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Exe\MILANDR_PROJECT_TEMPLATE.out</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\Debug\List\MILANDR_PROJECT_TEMPLATE.map</file>
             <file>$PROJ_DIR$\CMSIS\core_cmInstr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
             <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\CMSIS\core_cm3.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\STARTUP\startup_MDR32F9Qx.s</file>
+            <file>$PROJ_DIR$\SPL\src\MDR32F9Qx_port.c</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\config\linker\Milandr\MDR1986VE9x\MDR1986VE9x.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MDR32F9Qx_port.o</file>
             <file>$TOOLKIT_DIR$\inc\c\time.h</file>
-            <file>$PROJ_DIR$\SPL\inc\MDR32F9Qx_port.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MDR32F9Qx_port.xcl</file>
-            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\CMSIS\core_cmFunc.h</file>
-            <file>$PROJ_DIR$\STARTUP\system_MDR32F9Qx.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_MDR32F9Qx.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\SPL\MDR32F9Qx_config.h</file>
-            <file>$PROJ_DIR$\SPL\inc\MDR32F9Qx_lib.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MILANDR_PROJECT_TEMPLATE.pbd</file>
-            <file>$PROJ_DIR$\Debug\Obj\GPIO.o</file>
             <file>$PROJ_DIR$\Debug\Obj\GPIO.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\GPIO.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_MDR32F9Qx.o</file>
+            <file>$PROJ_DIR$\STARTUP\system_MDR32F9Qx.h</file>
+            <file>$PROJ_DIR$\CMSIS\core_cmFunc.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
             <file>$PROJ_DIR$\Debug\Obj\GPIO.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\SPL\MDR32F9Qx_config.h</file>
+            <file>$PROJ_DIR$\SPL\inc\MDR32F9Qx_port.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MILANDR_PROJECT_TEMPLATE.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\MDR32F9Qx_port.xcl</file>
+            <file>$PROJ_DIR$\SPL\inc\MDR32F9Qx_lib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 20 4</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\APP\src\GPIO.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 40</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 41</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 43</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 0 26 31 32 7 21 36 30 29 23 42 5 1 22 24 25 13 33 34 37 38</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\APP\src\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 9</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 10</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 6</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 0 26 31 32 7 21 36 30 29 23 42 5 1 22 24 25 13 33 34 37 38</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\SPL\src\MDR32F9Qx_port.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 18</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 28</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 19</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 27 37 38 22 31 32 7 21 36 5 1 24 25 13 33 34</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\STARTUP\startup_MDR32F9Qx.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 35</file>
+                    <file> 0 10</file>
                 </tool>
             </outputs>
         </file>
@@ -142,13 +64,91 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 4</file>
+                    <file> 10</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 8 40 9 18 35 11 3 2 12</file>
+                    <file> 22 29 23 25 30 6 20 4 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\APP\src\GPIO.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 26 27 43 24 16 36 42 35 12 33 5 15 14 11 13 8 32 31 37 41</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\APP\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 26 27 43 24 16 36 42 35 12 33 5 15 14 11 13 8 32 31 37 41</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\STARTUP\startup_MDR32F9Qx.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SPL\src\MDR32F9Qx_port.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38 37 41 14 27 43 24 16 36 5 15 11 13 8 32 31</file>
                 </tool>
             </inputs>
         </file>

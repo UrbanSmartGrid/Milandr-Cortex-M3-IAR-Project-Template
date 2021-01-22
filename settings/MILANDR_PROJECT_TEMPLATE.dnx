@@ -22,7 +22,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>1733471100</Checksum>
+        <Checksum>86770600</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -68,6 +68,10 @@
         <FreqHi>0</FreqHi>
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
+    <Registers>
+        <regBase0>MDR_PORTE_RXTX 2</regBase0>
+        <regBase1>MDR_PORTE_OE 2</regBase1>
+    </Registers>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>

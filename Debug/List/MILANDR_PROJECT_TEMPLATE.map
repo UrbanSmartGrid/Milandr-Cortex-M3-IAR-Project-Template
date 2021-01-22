@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.9.278/W32 for ARM                  20/Jan/2021  13:18:51
+# IAR ELF Linker V8.50.9.278/W32 for ARM                  22/Jan/2021  13:42:54
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\Debug\List\MILANDR_PROJECT_TEMPLATE.map
 #    Command line =
-#        -f C:\Users\NIKOLA~1\AppData\Local\Temp\EW9D47.tmp
+#        -f C:\Users\NIKOLA~1\AppData\Local\Temp\EW1A9D.tmp
 #        (D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\Debug\Obj\GPIO.o
 #        D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\Debug\Obj\main.o
 #        D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\Debug\Obj\MDR32F9Qx_port.o
@@ -60,38 +60,32 @@ keep { section .intvec };
   .intvec            ro code   0x800'0000    0xc0  startup_MDR32F9Qx.o [1]
                              - 0x800'00c0    0xc0
 
-"P1":                                       0x754
-  .text              ro code   0x800'00c0   0x184  main.o [1]
-  .text              ro code   0x800'0244   0x13c  GPIO.o [1]
-  .text              ro code   0x800'0380    0x28  printf.o [2]
-  .text              ro code   0x800'03a8   0x134  xprintftiny.o [2]
-  .text              ro code   0x800'04dc    0x36  strlen.o [3]
-  .text              ro code   0x800'0514    0x7c  iarttio.o [4]
-  .text              ro code   0x800'0590    0x3c  XShttio.o [2]
-  .text              ro code   0x800'05cc    0x38  packbits_init_single.o [3]
-  .text              ro code   0x800'0604    0x28  data_init.o [3]
-  .rodata            const     0x800'062c    0x24  main.o [1]
-  .rodata            const     0x800'0650    0x24  main.o [1]
-  .text              ro code   0x800'0674    0x22  iarwrite.o [4]
-  .iar.init_table    const     0x800'0698    0x10  - Linker created -
-  .text              ro code   0x800'06a8    0x20  putchar.o [2]
-  .text              ro code   0x800'06c8    0x10  write.o [4]
-  .text              ro code   0x800'06d8    0x1e  dwrite.o [4]
-  .text              ro code   0x800'06f6    0x20  iarwstd.o [4]
-  .text              ro code   0x800'0718    0x1e  cmain.o [3]
-  .text              ro code   0x800'0736     0x4  low_level_init.o [2]
-  .text              ro code   0x800'073a     0x4  exit.o [2]
-  .text              ro code   0x800'0740     0xa  cexit.o [3]
-  .text              ro code   0x800'074c    0x14  exit.o [4]
-  .text              ro code   0x800'0760    0x1c  cstartup_M.o [3]
-  .text              ro code   0x800'077c    0x16  xprout.o [2]
-  .text              ro code   0x800'0794     0x8  startup_MDR32F9Qx.o [1]
-  .text              ro code   0x800'079c     0x4  startup_MDR32F9Qx.o [1]
-  .text              ro code   0x800'07a0     0x4  startup_MDR32F9Qx.o [1]
-  .text              ro code   0x800'07a4     0x4  startup_MDR32F9Qx.o [1]
-  .text              ro code   0x800'07a8     0x4  startup_MDR32F9Qx.o [1]
-  .text              ro code   0x800'07ac     0x4  startup_MDR32F9Qx.o [1]
-  .text              ro code   0x800'07b0     0x4  startup_MDR32F9Qx.o [1]
+"P1":                                       0x76c
+  .text              ro code   0x800'00c0   0x188  GPIO.o [1]
+  .text              ro code   0x800'0248   0x150  main.o [1]
+  .text              ro code   0x800'0398    0x28  printf.o [2]
+  .text              ro code   0x800'03c0   0x134  xprintftiny.o [2]
+  .text              ro code   0x800'04f4    0x36  strlen.o [3]
+  .text              ro code   0x800'052c    0x7c  iarttio.o [4]
+  .text              ro code   0x800'05a8    0x3c  XShttio.o [2]
+  .text              ro code   0x800'05e4    0x38  packbits_init_single.o [3]
+  .text              ro code   0x800'061c    0x28  data_init.o [3]
+  .rodata            const     0x800'0644    0x24  main.o [1]
+  .rodata            const     0x800'0668    0x24  main.o [1]
+  .text              ro code   0x800'068c    0x22  iarwrite.o [4]
+  .iar.init_table    const     0x800'06b0    0x10  - Linker created -
+  .text              ro code   0x800'06c0    0x20  putchar.o [2]
+  .text              ro code   0x800'06e0    0x10  write.o [4]
+  .text              ro code   0x800'06f0    0x1e  dwrite.o [4]
+  .text              ro code   0x800'070e    0x20  iarwstd.o [4]
+  .text              ro code   0x800'0730    0x1e  cmain.o [3]
+  .text              ro code   0x800'074e     0x4  low_level_init.o [2]
+  .text              ro code   0x800'0752     0x4  exit.o [2]
+  .text              ro code   0x800'0758     0xa  cexit.o [3]
+  .text              ro code   0x800'0764    0x14  exit.o [4]
+  .text              ro code   0x800'0778    0x1c  cstartup_M.o [3]
+  .text              ro code   0x800'0794    0x16  xprout.o [2]
+  .text              ro code   0x800'07ac     0x8  startup_MDR32F9Qx.o [1]
   .text              ro code   0x800'07b4     0x4  startup_MDR32F9Qx.o [1]
   .text              ro code   0x800'07b8     0x4  startup_MDR32F9Qx.o [1]
   .text              ro code   0x800'07bc     0x4  startup_MDR32F9Qx.o [1]
@@ -115,9 +109,15 @@ keep { section .intvec };
   .text              ro code   0x800'0804     0x4  startup_MDR32F9Qx.o [1]
   .text              ro code   0x800'0808     0x4  startup_MDR32F9Qx.o [1]
   .text              ro code   0x800'080c     0x4  startup_MDR32F9Qx.o [1]
-  .rodata            const     0x800'0810     0x0  packbits_init_single.o [3]
-  Initializer bytes  const     0x800'0810     0x4  <for P2-1>
-                             - 0x800'0814   0x754
+  .text              ro code   0x800'0810     0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code   0x800'0814     0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code   0x800'0818     0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code   0x800'081c     0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code   0x800'0820     0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code   0x800'0824     0x4  startup_MDR32F9Qx.o [1]
+  .rodata            const     0x800'0828     0x0  packbits_init_single.o [3]
+  Initializer bytes  const     0x800'0828     0x4  <for P2-1>
+                             - 0x800'082c   0x76c
 
 "P2", part 1 of 2:                           0x2d
   P2-1                        0x2000'0000    0x2d  <Init block>
@@ -142,7 +142,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-   0x800'0814   0x801'ffff  0x1'f7ec
+   0x800'082c   0x801'ffff  0x1'f7d4
   0x2000'002d  0x2000'002f       0x3
   0x2000'1030  0x2000'7fff    0x6fd0
 
@@ -155,7 +155,7 @@ Unused ranges:
           -------      ----
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x4 (8% of destination):
-           0x800'0810   0x4
+           0x800'0828   0x4
     1 destination range, total size 0x2d:
           0x2000'0000  0x2d
 
@@ -172,11 +172,11 @@ command line/config:
     Total:
 
 D:\PROJECTS\PLC\Milandr-Cortex-M3-IAR-Project-Template\Debug\Obj: [1]
-    GPIO.o                      316        2       24
-    main.o                      388       73       12
+    GPIO.o                      392        2       24
+    main.o                      336       73       12
     startup_MDR32F9Qx.o         316
     -------------------------------------------------
-    Total:                    1'020       75       36
+    Total:                    1'044       75       36
 
 dl7M_tln.a: [2]
     XShttio.o                    60        1        9
@@ -212,7 +212,7 @@ shb_l.a: [4]
     Gaps                         10        2
     Linker created                        16    4'096
 -----------------------------------------------------
-    Grand Total:              1'974       94    4'141
+    Grand Total:              1'998       94    4'141
 
 
 *******************************************************************************
@@ -221,19 +221,19 @@ shb_l.a: [4]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base    0x800'0698          --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'06a8          --   Gb  - Linker created -
-?main                    0x800'0719         Code  Gb  cmain.o [3]
+.iar.init_table$$Base    0x800'06b0          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'06c0          --   Gb  - Linker created -
+?main                    0x800'0731         Code  Gb  cmain.o [3]
 CSTACK$$Base            0x2000'0030          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'1030          --   Gb  - Linker created -
-CheckButtons             0x800'031d   0x36  Code  Gb  GPIO.o [1]
-DefineButtonState        0x800'02a9   0x74  Code  Gb  GPIO.o [1]
-GPIO_Init                0x800'0245   0x64  Code  Gb  GPIO.o [1]
-Region$$Table$$Base      0x800'0698          --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'06a8          --   Gb  - Linker created -
-StartSysTick             0x800'0105   0x16  Code  Gb  main.o [1]
-StartupClockConfigure    0x800'00c1   0x44  Code  Gb  main.o [1]
-SysTick_Handler          0x800'011b   0x6a  Code  Gb  main.o [1]
+CheckButtons             0x800'01d3   0x36  Code  Gb  GPIO.o [1]
+DefineButtonState        0x800'015f   0x74  Code  Gb  GPIO.o [1]
+GPIO_Init                0x800'00c1   0x9e  Code  Gb  GPIO.o [1]
+Region$$Table$$Base      0x800'06b0          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'06c0          --   Gb  - Linker created -
+StartSysTick             0x800'028d   0x16  Code  Gb  main.o [1]
+StartupClockConfigure    0x800'0249   0x44  Code  Gb  main.o [1]
+SysTick_Handler          0x800'02a3   0x6a  Code  Gb  main.o [1]
 SysTick_Handler::_1000ms_
                         0x2000'002a    0x2  Data  Lc  main.o [1]
 SysTick_Handler::_100ms_
@@ -242,39 +242,39 @@ SysTick_Handler::_10ms_
                         0x2000'0024    0x2  Data  Lc  main.o [1]
 SysTick_Handler::_500ms_
                         0x2000'0028    0x2  Data  Lc  main.o [1]
-_PrintfTiny              0x800'03c1  0x11c  Code  Gb  xprintftiny.o [2]
-_Prout                   0x800'077d   0x16  Code  Gb  xprout.o [2]
-__cmain                  0x800'0719         Code  Gb  cmain.o [3]
-__dwrite                 0x800'06d9   0x1e  Code  Gb  dwrite.o [4]
-__exit                   0x800'074d   0x14  Code  Gb  exit.o [4]
-__iar_close_ttio         0x800'0515   0x2c  Code  Gb  iarttio.o [4]
-__iar_data_init3         0x800'0605   0x28  Code  Gb  data_init.o [3]
-__iar_get_ttio           0x800'0541   0x4c  Code  Gb  iarttio.o [4]
-__iar_lookup_ttioh       0x800'05bf    0x4  Code  Gb  XShttio.o [2]
+_PrintfTiny              0x800'03d9  0x11c  Code  Gb  xprintftiny.o [2]
+_Prout                   0x800'0795   0x16  Code  Gb  xprout.o [2]
+__cmain                  0x800'0731         Code  Gb  cmain.o [3]
+__dwrite                 0x800'06f1   0x1e  Code  Gb  dwrite.o [4]
+__exit                   0x800'0765   0x14  Code  Gb  exit.o [4]
+__iar_close_ttio         0x800'052d   0x2c  Code  Gb  iarttio.o [4]
+__iar_data_init3         0x800'061d   0x28  Code  Gb  data_init.o [3]
+__iar_get_ttio           0x800'0559   0x4c  Code  Gb  iarttio.o [4]
+__iar_lookup_ttioh       0x800'05d7    0x4  Code  Gb  XShttio.o [2]
 __iar_packbits_init_single3
-                         0x800'05cd   0x38  Code  Gb  packbits_init_single.o [3]
-__iar_program_start      0x800'0761         Code  Gb  cstartup_M.o [3]
-__iar_sh_stdout          0x800'06f7   0x20  Code  Gb  iarwstd.o [4]
-__iar_sh_write           0x800'0675   0x22  Code  Gb  iarwrite.o [4]
-__iar_ttio_guard_lock    0x800'0591   0x1e  Code  Gb  XShttio.o [2]
+                         0x800'05e5   0x38  Code  Gb  packbits_init_single.o [3]
+__iar_program_start      0x800'0779         Code  Gb  cstartup_M.o [3]
+__iar_sh_stdout          0x800'070f   0x20  Code  Gb  iarwstd.o [4]
+__iar_sh_write           0x800'068d   0x22  Code  Gb  iarwrite.o [4]
+__iar_ttio_guard_lock    0x800'05a9   0x1e  Code  Gb  XShttio.o [2]
 __iar_ttio_guard_unlock
-                         0x800'05af   0x10  Code  Gb  XShttio.o [2]
+                         0x800'05c7   0x10  Code  Gb  XShttio.o [2]
 __iar_ttio_handles      0x2000'0000    0x8  Data  Lc  XShttio.o [2]
-__low_level_init         0x800'0737    0x4  Code  Gb  low_level_init.o [2]
+__low_level_init         0x800'074f    0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000         Data  Gb  startup_MDR32F9Qx.o [1]
-__write                  0x800'06c9   0x10  Code  Gb  write.o [4]
-_call_main               0x800'0725         Code  Gb  cmain.o [3]
-_exit                    0x800'0741         Code  Gb  cexit.o [3]
-_main                    0x800'072f         Code  Gb  cmain.o [3]
+__write                  0x800'06e1   0x10  Code  Gb  write.o [4]
+_call_main               0x800'073d         Code  Gb  cmain.o [3]
+_exit                    0x800'0759         Code  Gb  cexit.o [3]
+_main                    0x800'0747         Code  Gb  cmain.o [3]
 btn_boot_ctrl           0x2000'0018    0x8  Data  Gb  GPIO.o [1]
 btn_pwr_ctrl            0x2000'0008    0x8  Data  Gb  GPIO.o [1]
 btn_rst_ctrl            0x2000'0010    0x8  Data  Gb  GPIO.o [1]
-exit                     0x800'073b    0x4  Code  Gb  exit.o [2]
-main                     0x800'0185   0x78  Code  Gb  main.o [1]
-out                      0x800'03a9   0x18  Code  Lc  xprintftiny.o [2]
-printf                   0x800'0381   0x28  Code  Gb  printf.o [2]
-putchar                  0x800'06a9   0x20  Code  Gb  putchar.o [2]
-strlen                   0x800'04dd         Code  Gb  strlen.o [3]
+exit                     0x800'0753    0x4  Code  Gb  exit.o [2]
+main                     0x800'030d   0x46  Code  Gb  main.o [1]
+out                      0x800'03c1   0x18  Code  Lc  xprintftiny.o [2]
+printf                   0x800'0399   0x28  Code  Gb  printf.o [2]
+putchar                  0x800'06c1   0x20  Code  Gb  putchar.o [2]
+strlen                   0x800'04f5         Code  Gb  strlen.o [3]
 system_events           0x2000'0020    0x4  Data  Gb  main.o [1]
 ttio_guard              0x2000'002c    0x1  Data  Lc  XShttio.o [2]
 
@@ -284,7 +284,7 @@ ttio_guard              0x2000'002c    0x1  Data  Lc  XShttio.o [2]
 [3] = rt7M_tl.a
 [4] = shb_l.a
 
-  1'974 bytes of readonly  code memory
+  1'998 bytes of readonly  code memory
      94 bytes of readonly  data memory
   4'141 bytes of readwrite data memory
 

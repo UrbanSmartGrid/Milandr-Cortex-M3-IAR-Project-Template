@@ -69,6 +69,11 @@ typedef struct {
 #define		LED_PWR_GREEN_OFF		MDR_PORTA->RXTX |= (1U<<PIN5);
 
 
+// SYSTEM POWER ON/OFF
+#define	SYSTEM_POWER_ON		MDR_PORTE->RXTX |= (1U<<PIN3);
+#define	SYSTEM_POWER_OFF	MDR_PORTE->RXTX &= ~(1U<<PIN3);
+
+
 
 // GPIO.c
 extern BUTTON_CTRL btn_pwr_ctrl;
