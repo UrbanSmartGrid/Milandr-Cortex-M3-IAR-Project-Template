@@ -21,10 +21,7 @@ void GPIO_Init(void)
 	// триггер Шмитта 400 мВ
 	MDR_PORTA->PD |= (LSB16<<PIN1) | (LSB16<<PIN2) | (LSB16<<PIN3);
 	// фильтрация импульсов до 10 нс
-	MDR_PORTA->GFEN |= (1U<<PIN1) | (1U<<PIN2) | (1U<<PIN3);
-	
-	//MDR_PORTA->PWR
-	
+	MDR_PORTA->GFEN |= (1U<<PIN1) | (1U<<PIN2) | (1U<<PIN3);	
 	// режим цифрового порта
 	MDR_PORTA->ANALOG |= (1U<<PIN1) | (1U<<PIN2) | (1U<<PIN3);
 	
@@ -34,6 +31,9 @@ void GPIO_Init(void)
 	// no pull-up & no pull-down
 	MDR_PORTA->PULL &= ~((1U<<PIN5) | (1U<<PIN4) | (LSB16<<PIN5) | (LSB16<<PIN4));
 	MDR_PORTA->OE |= (1U<<PIN5) | (1U<<PIN4);
+	// медленный фронт (100 нс)
+	MDR_PORTA->PWR &= ~((3U << 10) | (3U << 8));
+	MDR_PORTA->PWR |= (1U << 10) | (1U << 8);
 	// режим цифрового порта
 	MDR_PORTA->ANALOG |= (1U<<PIN5) | (1U<<PIN4);
 	
@@ -47,6 +47,25 @@ void GPIO_Init(void)
 	MDR_PORTE->PWR |= (1U << 6);
 	// режим цифрового порта
 	MDR_PORTE->ANALOG |= (1U<<PIN3);
+	
+	//--------------------------------------------------------------------------------------------------------//
+	// PORTE INPUTS
+	// PERIPH_RST:	PE0 w/o pulls
+	// SYSTEM:		PE1 w/o pulls
+	// MMC_CD:		PE6 w/o pulls
+	MDR_PORTE->OE &= ~((1U<<PIN0) | (1U<<PIN1) | (1U<<PIN6));
+	MDR_PORTE->PULL &= ~((1U<<PIN0) | (1U<<PIN1) | (1U<<PIN6) | (LSB16<<PIN0) | (LSB16<<PIN1) | (LSB16<<PIN6));
+	// триггер Шмитта 400 мВ
+	MDR_PORTE->PD |= (LSB16<<PIN0) | (LSB16<<PIN1) | (LSB16<<PIN6);
+	// фильтрация импульсов до 10 нс
+	MDR_PORTE->GFEN |= (1U<<PIN0) | (1U<<PIN1) | (1U<<PIN6);	
+	// режим цифрового порта
+	MDR_PORTE->ANALOG |= (1U<<PIN0) | (1U<<PIN1) | (1U<<PIN6);
+	
+	//--------------------------------------------------------------------------------------------------------//
+	// ADC
+	// 
+	
 }
 
 

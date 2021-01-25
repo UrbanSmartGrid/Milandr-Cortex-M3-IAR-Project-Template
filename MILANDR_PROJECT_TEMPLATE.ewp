@@ -78,7 +78,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>MDR1986VE9x	Milandr MDR1986VE9x</state>
+                    <state>MDR1986BE9x	Milandr MDR1986BE9x</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -138,7 +138,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>MDR1986VE9x	Milandr MDR1986VE9x</state>
+                    <state>MDR1986BE9x	Milandr MDR1986BE9x</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -781,7 +781,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\Milandr\MDR1986VE9x\MDR1986VE9x.icf</state>
+                    <state>$TOOLKIT_DIR$\config\linker\Milandr\MDR32F1.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>

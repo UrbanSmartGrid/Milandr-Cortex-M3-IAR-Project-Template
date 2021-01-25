@@ -6,11 +6,11 @@
 
 "-p" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\CONFIG\debugger\Milandr\MDR1986VE9x.ddf" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\CONFIG\debugger\Milandr\MDR1986BE9x.ddf" 
 
 "--semihosting" 
 
-"--device=MDR1986VE9x" 
+"--device=MDR1986BE9x" 
 
 "--drv_communication=USB0" 
 

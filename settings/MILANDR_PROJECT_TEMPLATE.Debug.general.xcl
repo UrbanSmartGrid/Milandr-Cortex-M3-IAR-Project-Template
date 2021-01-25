@@ -6,7 +6,7 @@
 
 --plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\bin\armbat.dll" 
 
---flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\config\flashloader\Milandr\MDR1986VE9x\FlashMDR1986VE9x.board" 
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.5\arm\config\flashloader\Milandr\FlashMDR32F1x.board" 
 
 
 
